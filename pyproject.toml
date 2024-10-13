@@ -8,7 +8,12 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-django = "^5.1.1"
+django = "^5.1.2"
+psycopg2-binary = ">=2.9,<3.0"
+django-db = "^0.0.7"
+django-crispy-forms = "^2.3"
+bootstrap4 = "^0.1.0"
+crispy-bootstrap4 = "^2024.10"
 
 
 [build-system]

@@ -1,0 +1,13 @@
+{% extends "Search_For_Trip/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<p>здесь форма добавления города в список</p>
+<form action="" method="post" autocomplete="off">
+    {% csrf_token %}
+    {{form.name| as_crispy_field}}
+    {{form.country | as_crispy_field}}
+    <button type="submit" class="btn btn-success"> </button>
+</form>
+
+{% endblock content %}

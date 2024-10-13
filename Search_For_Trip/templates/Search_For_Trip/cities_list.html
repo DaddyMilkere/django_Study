@@ -1,0 +1,21 @@
+{% extends "Search_For_Trip/base.html" %}
+
+{% block content %}
+<p>здесь список городов</p>
+<table class="cities_table">
+    <thead>
+        <tr>
+            <td>Название</td>
+            <td>Страна</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for city in cities_list %}
+        <tr>
+            <td>{{city.name}}</td>
+            <td>{{city.country}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock content %}
